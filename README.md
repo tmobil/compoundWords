@@ -13,5 +13,5 @@ Playground
 Sunflower
 Moonlight
 
-Feel free to be creative, considering options such as words of differing character lengths, memory and performance considerations for the project.      
+Feel free to be creative, considering options such as design choices, memory and performance considerations for the project.      
 
