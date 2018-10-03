@@ -9,9 +9,13 @@ Given valid words from the dictionary, find all compound words from the dictinoa
 A compound word contains two or more valid words.
 
 For example, 
+
 Playground
+
 Sunflower
+
 Moonlight
+
 
 Feel free to be creative, considering options such as design choices, memory and performance considerations for the project.      
 
