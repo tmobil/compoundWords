@@ -2,7 +2,7 @@
 Compound Words Problem
 
 
-Assume valid words are available in a dictionary.
+Assume valid words are available in a dictionary. Valid words are at least two characters long.
 https://github.com/tmobil/compoundWords/blob/master/english.json
 
 Given valid words from the dictionary, find all compound words from the dictinoary.
