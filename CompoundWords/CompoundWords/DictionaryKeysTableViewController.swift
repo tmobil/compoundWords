@@ -23,12 +23,12 @@ class DictionaryKeysTableViewController: UITableViewController {
             self.readValuesFromJson()
             self.findCompoundWordsFromValues()
         }
-    
+        
     }
     
     func readValuesFromJson() {
         let data = self.readDataFromJsonFile(fileName: self.fileName)
-
+        
         if data.errorKey == nil {
             if let jsonData = data.Data {
                 self.jsonData = jsonData
@@ -36,7 +36,7 @@ class DictionaryKeysTableViewController: UITableViewController {
                 self.values = Array(Set(self.values))
                 
                 self.values = self.values.sorted { $0.localizedCaseInsensitiveCompare($1) == ComparisonResult.orderedAscending }
-
+                
                 print(self.values.count)
             }
         }
@@ -66,18 +66,14 @@ class DictionaryKeysTableViewController: UITableViewController {
         for eachValue in self.values {
             if self.checkWordIsCompoundWord(word: eachValue) {
                 if self.compundWords.contains(eachValue) {
-                    //do nothing
                 }
                 else {
                     self.compundWords.append(eachValue)
                     DispatchQueue.main.async {
-                        self.tableView.beginUpdates()
-                        self.tableView.insertRows(at: [IndexPath.init(row: self.compundWords.count-1, section: 0)
-                            ], with: .automatic)
-                        self.tableView.endUpdates()
+                        self.tableView.reloadData()
+                        self.tableView.scrollToRow(at: IndexPath.init(row: self.compundWords.count-1, section: 0), at: .bottom, animated: true)
                     }
                 }
-                
             }
         }
     }
@@ -88,11 +84,11 @@ class DictionaryKeysTableViewController: UITableViewController {
             let word1 = word.suffix(word.count-i)
             
             if word0.count > 1 && word1.count > 1 {
-                if isWordExistsInKeys(word: String(word0)) && isWordExistsInKeys(word: String(word1)) {
-                    print(word0)
-                    print(word1)
-                    print(word)
-                    return true
+                // let filtered0 = self.values.filter { $0.hasPrefix(word0) }
+                if isWordExistsInKeys(word: String(word0)) {
+                    if isWordExistsInKeys(word: String(word1)) {
+                        return true
+                    }
                 }
             }
         }
@@ -135,5 +131,5 @@ class DictionaryKeysTableViewController: UITableViewController {
     
 }
 extension Array where Element: Equatable {
-   
+    
 }
