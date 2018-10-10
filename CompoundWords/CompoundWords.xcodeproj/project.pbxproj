@@ -7,14 +7,15 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		A09972DA21670B960087BBF1 /* DictionaryKeysTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A09972D921670B960087BBF1 /* DictionaryKeysTableViewController.swift */; };
+		A09972DC21670DFB0087BBF1 /* CompoundWordTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A09972DB21670DFB0087BBF1 /* CompoundWordTableViewCell.swift */; };
+		A09972E0216716A40087BBF1 /* invalid.json in Resources */ = {isa = PBXBuildFile; fileRef = A09972DF216716A40087BBF1 /* invalid.json */; };
 		F4BA28FF216652DF0021909E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4BA28FE216652DF0021909E /* AppDelegate.swift */; };
-		F4BA2901216652DF0021909E /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4BA2900216652DF0021909E /* ViewController.swift */; };
 		F4BA2904216652DF0021909E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F4BA2902216652DF0021909E /* Main.storyboard */; };
 		F4BA2906216652E30021909E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F4BA2905216652E30021909E /* Assets.xcassets */; };
 		F4BA2909216652E30021909E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F4BA2907216652E30021909E /* LaunchScreen.storyboard */; };
 		F4BA2914216652E30021909E /* CompoundWordsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4BA2913216652E30021909E /* CompoundWordsTests.swift */; };
 		F4BA291F216653140021909E /* english.json in Resources */ = {isa = PBXBuildFile; fileRef = F4BA291E216653140021909E /* english.json */; };
-		F4BA2921216661DD0021909E /* invalid.json in Resources */ = {isa = PBXBuildFile; fileRef = F4BA2920216661DD0021909E /* invalid.json */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -28,9 +29,11 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		A09972D921670B960087BBF1 /* DictionaryKeysTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DictionaryKeysTableViewController.swift; sourceTree = "<group>"; };
+		A09972DB21670DFB0087BBF1 /* CompoundWordTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CompoundWordTableViewCell.swift; sourceTree = "<group>"; };
+		A09972DF216716A40087BBF1 /* invalid.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; name = invalid.json; path = ../../invalid.json; sourceTree = "<group>"; };
 		F4BA28FB216652DF0021909E /* CompoundWords.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CompoundWords.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F4BA28FE216652DF0021909E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		F4BA2900216652DF0021909E /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		F4BA2903216652DF0021909E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		F4BA2905216652E30021909E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		F4BA2908216652E30021909E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -39,7 +42,6 @@
 		F4BA2913216652E30021909E /* CompoundWordsTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CompoundWordsTests.swift; sourceTree = "<group>"; };
 		F4BA2915216652E30021909E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		F4BA291E216653140021909E /* english.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; name = english.json; path = ../../english.json; sourceTree = "<group>"; };
-		F4BA2920216661DD0021909E /* invalid.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; name = invalid.json; path = ../../invalid.json; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -82,10 +84,11 @@
 			isa = PBXGroup;
 			children = (
 				F4BA28FE216652DF0021909E /* AppDelegate.swift */,
-				F4BA2900216652DF0021909E /* ViewController.swift */,
 				F4BA291E216653140021909E /* english.json */,
-				F4BA2920216661DD0021909E /* invalid.json */,
+				A09972DF216716A40087BBF1 /* invalid.json */,
 				F4BA2902216652DF0021909E /* Main.storyboard */,
+				A09972D921670B960087BBF1 /* DictionaryKeysTableViewController.swift */,
+				A09972DB21670DFB0087BBF1 /* CompoundWordTableViewCell.swift */,
 				F4BA2905216652E30021909E /* Assets.xcassets */,
 				F4BA2907216652E30021909E /* LaunchScreen.storyboard */,
 				F4BA290A216652E30021909E /* Info.plist */,
@@ -186,7 +189,7 @@
 				F4BA2909216652E30021909E /* LaunchScreen.storyboard in Resources */,
 				F4BA2906216652E30021909E /* Assets.xcassets in Resources */,
 				F4BA291F216653140021909E /* english.json in Resources */,
-				F4BA2921216661DD0021909E /* invalid.json in Resources */,
+				A09972E0216716A40087BBF1 /* invalid.json in Resources */,
 				F4BA2904216652DF0021909E /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -205,8 +208,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				F4BA2901216652DF0021909E /* ViewController.swift in Sources */,
 				F4BA28FF216652DF0021909E /* AppDelegate.swift in Sources */,
+				A09972DA21670B960087BBF1 /* DictionaryKeysTableViewController.swift in Sources */,
+				A09972DC21670DFB0087BBF1 /* CompoundWordTableViewCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -371,6 +375,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = FM7J362883;
 				INFOPLIST_FILE = CompoundWords/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -389,6 +394,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = FM7J362883;
 				INFOPLIST_FILE = CompoundWords/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",

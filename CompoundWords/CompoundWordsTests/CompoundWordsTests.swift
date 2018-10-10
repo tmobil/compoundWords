@@ -10,7 +10,7 @@ import XCTest
 @testable import CompoundWords
 
 class CompoundWordsTests: XCTestCase {
-let viewController = ViewController()
+let viewController = DictionaryKeysTableViewController()
     
     override func setUp() {
         // Put setup code here. This method is called before the invocation of each test method in the class.
@@ -36,29 +36,48 @@ let viewController = ViewController()
     }
     
     func testChecknoncompoundword() {
-        let isValid1 = viewController.checkWordIsCompoundWord(word: "tdtdtdtd")
+        viewController.values = ["a", "b", "c"]
+        
+        let isValid1 = viewController.checkWordIsCompoundWord(word: "sun")
         XCTAssert(isValid1 == false, "is complex word")
         
-        let isValid2 = viewController.checkWordIsCompoundWord(word: "iendkdiewerj")
+        let isValid2 = viewController.checkWordIsCompoundWord(word: "nut")
         XCTAssert(isValid2 == false, "is complex word")
 
     }
     
     func testCheckcompoundword() {
-        let isValid1 = viewController.checkWordIsCompoundWord(word: "playground")
+        viewController.values = ["sun", "flower", "sunflower"]
+        
+        let isValid1 = viewController.checkWordIsCompoundWord(word: "sun")
+        XCTAssert(isValid1 == false, "is complex word")
+        
+        let isValid2 = viewController.checkWordIsCompoundWord(word: "flower")
+        XCTAssert(isValid2 == false, "is complex word")
+        
+        let isValid3 = viewController.checkWordIsCompoundWord(word: "sunflower")
+        XCTAssert(isValid3 == true, "is complex word")
+        
+        
+    }
+    
+    func testIsWordExistsInKeys() {
+        viewController.values = ["sun", "flower", "sunflower"]
+        
+        let isValid1 = viewController.isWordExistsInKeys(word: "Sun")
         XCTAssert(isValid1 == true, "is complex word")
         
-        let isValid2 = viewController.checkWordIsCompoundWord(word: "sunflower")
-        XCTAssert(isValid2 == true, "is complex word")
+        let isValid2 = viewController.isWordExistsInKeys(word: "abc")
+        XCTAssert(isValid2 == false, "is complex word")
         
     }
-
-    func testCheckWordsAvailableInArray() {
-        viewController.checkForWordsInString(sentence: "Sunflower is living in playground")
+    
+    func testCompoundWordsContains() {
+        viewController.values = ["sun", "flower", "sunflower"]
         
-        XCTAssert(viewController.compundWords.contains("Sunflower"), "compound words found")
-        XCTAssert(viewController.compundWords.contains("playground"), "compound words found")
-
+        viewController.findCompoundWordsFromValues()
+        
+        XCTAssert(viewController.compundWords.contains("sunflower"), "is complex word")
+        XCTAssert(!viewController.compundWords.contains("sun"), "is complex word")
     }
-
 }
