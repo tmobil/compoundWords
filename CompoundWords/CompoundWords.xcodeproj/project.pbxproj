@@ -7,9 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		4AAAEC78216DFBF7001D1D87 /* DataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4AAAEC77216DFBF7001D1D87 /* DataManager.swift */; };
-		4AAAEC7A216E0028001D1D87 /* test_english.json in Resources */ = {isa = PBXBuildFile; fileRef = 4AAAEC79216E0028001D1D87 /* test_english.json */; };
 		A09972DA21670B960087BBF1 /* DictionaryKeysTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A09972D921670B960087BBF1 /* DictionaryKeysTableViewController.swift */; };
+		A09972DC21670DFB0087BBF1 /* CompoundWordTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A09972DB21670DFB0087BBF1 /* CompoundWordTableViewCell.swift */; };
 		A09972E0216716A40087BBF1 /* invalid.json in Resources */ = {isa = PBXBuildFile; fileRef = A09972DF216716A40087BBF1 /* invalid.json */; };
 		F4BA28FF216652DF0021909E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4BA28FE216652DF0021909E /* AppDelegate.swift */; };
 		F4BA2904216652DF0021909E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F4BA2902216652DF0021909E /* Main.storyboard */; };
@@ -30,9 +29,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		4AAAEC77216DFBF7001D1D87 /* DataManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataManager.swift; sourceTree = "<group>"; };
-		4AAAEC79216E0028001D1D87 /* test_english.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; name = test_english.json; path = ../../test_english.json; sourceTree = "<group>"; };
 		A09972D921670B960087BBF1 /* DictionaryKeysTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DictionaryKeysTableViewController.swift; sourceTree = "<group>"; };
+		A09972DB21670DFB0087BBF1 /* CompoundWordTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CompoundWordTableViewCell.swift; sourceTree = "<group>"; };
 		A09972DF216716A40087BBF1 /* invalid.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; name = invalid.json; path = ../../invalid.json; sourceTree = "<group>"; };
 		F4BA28FB216652DF0021909E /* CompoundWords.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CompoundWords.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F4BA28FE216652DF0021909E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -88,13 +86,12 @@
 				F4BA28FE216652DF0021909E /* AppDelegate.swift */,
 				F4BA291E216653140021909E /* english.json */,
 				A09972DF216716A40087BBF1 /* invalid.json */,
-				4AAAEC79216E0028001D1D87 /* test_english.json */,
 				F4BA2902216652DF0021909E /* Main.storyboard */,
 				A09972D921670B960087BBF1 /* DictionaryKeysTableViewController.swift */,
+				A09972DB21670DFB0087BBF1 /* CompoundWordTableViewCell.swift */,
 				F4BA2905216652E30021909E /* Assets.xcassets */,
 				F4BA2907216652E30021909E /* LaunchScreen.storyboard */,
 				F4BA290A216652E30021909E /* Info.plist */,
-				4AAAEC77216DFBF7001D1D87 /* DataManager.swift */,
 			);
 			path = CompoundWords;
 			sourceTree = "<group>";
@@ -191,7 +188,6 @@
 			files = (
 				F4BA2909216652E30021909E /* LaunchScreen.storyboard in Resources */,
 				F4BA2906216652E30021909E /* Assets.xcassets in Resources */,
-				4AAAEC7A216E0028001D1D87 /* test_english.json in Resources */,
 				F4BA291F216653140021909E /* english.json in Resources */,
 				A09972E0216716A40087BBF1 /* invalid.json in Resources */,
 				F4BA2904216652DF0021909E /* Main.storyboard in Resources */,
@@ -213,8 +209,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				F4BA28FF216652DF0021909E /* AppDelegate.swift in Sources */,
-				4AAAEC78216DFBF7001D1D87 /* DataManager.swift in Sources */,
 				A09972DA21670B960087BBF1 /* DictionaryKeysTableViewController.swift in Sources */,
+				A09972DC21670DFB0087BBF1 /* CompoundWordTableViewCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
