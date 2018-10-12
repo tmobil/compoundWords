@@ -87,6 +87,7 @@ class DictionaryKeysTableViewController: UITableViewController {
                 // let filtered0 = self.values.filter { $0.hasPrefix(word0) }
                 if isWordExistsInKeys(word: String(word0)) {
                     if isWordExistsInKeys(word: String(word1)) {
+                        print("\(word0) + \(word1)")
                         return true
                     }
                 }
